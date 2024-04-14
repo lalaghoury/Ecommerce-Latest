@@ -56,6 +56,9 @@ app.use("/api/orders", orderRoute);
 app.use("/api/coupon", couponRoute);
 app.use("/api/address", addressRoute);
 app.use("/api/checkout", braintreeRoute);
+app.get("/", (req, res) => {
+  res.send("hello");
+});
 
 mongoose
   .connect(process.env.MONGO_URL)
