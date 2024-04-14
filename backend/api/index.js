@@ -22,17 +22,17 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 // Routes
-const userRoute = require("./routes/user");
-const authRoute = require("./routes/auth");
-const imageRouter = require("./routes/image");
-const categoryRouter = require("./routes/category");
-const typeRouter = require("./routes/type");
-const productRoute = require("./routes/product");
-const cartRoute = require("./routes/cart");
-const orderRoute = require("./routes/order");
-const couponRoute = require("./routes/coupon");
-const addressRoute = require("./routes/address");
-const braintreeRoute = require("./routes/braintree");
+const userRoute = require("../routes/user");
+const authRoute = require("../routes/auth");
+const imageRouter = require("../routes/image");
+const categoryRouter = require("../routes/category");
+const typeRouter = require("../routes/type");
+const productRoute = require("../routes/product");
+const cartRoute = require("../routes/cart");
+const orderRoute = require("../routes/order");
+const couponRoute = require("../routes/coupon");
+const addressRoute = require("../routes/address");
+const braintreeRoute = require("../routes/braintree");
 // const path = require("path");
 
 const PORT = process.env.PORT || 8000;
@@ -71,3 +71,5 @@ mongoose
   .catch((err) => {
     console.log(err);
   });
+
+module.exports = app;
