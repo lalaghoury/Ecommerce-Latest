@@ -7,9 +7,16 @@
     }
   ],
   "routes": [
-    {
-      "src": "api/(.*)",
-      "dest": "app.js"
-    }
+    { "src": "/api/users", "dest": "app.js" },
+    { "src": "/api/auth", "dest": "app.js" },
+    { "src": "/api/images", "dest": "app.js" },
+    { "src": "/api/categories", "dest": "app.js" },
+    { "src": "/api/types", "dest": "app.js" },
+    { "src": "/api/products", "dest": "app.js" },
+    { "src": "/api/cart", "dest": "app.js" },
+    { "src": "/api/orders", "dest": "app.js" },
+    { "src": "/api/coupon", "dest": "app.js" },
+    { "src": "/api/address", "dest": "app.js" },
+    { "src": "/api/checkout", "dest": "app.js" }
   ]
 }

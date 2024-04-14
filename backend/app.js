@@ -44,6 +44,7 @@ app.use(
   })
 );
 app.use(cookieParser());
+
 app.use("/api/users", userRoute);
 app.use("/api/auth", authRoute);
 app.use("/api/images", imageRouter);
